@@ -1,0 +1,23 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Keyboard Shortcuts to Close Right Tabs",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Keyboard Shortcuts to Close Right Tabs",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "close-right-tabs": {
+      "suggested_key": { 
+        "default": "Ctrl+E",
+        "mac": "Command+E" 
+      },
+      "description": "Close Tabs to the right"
+    }
+  }
+}
